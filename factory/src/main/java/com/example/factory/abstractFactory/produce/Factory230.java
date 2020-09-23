@@ -1,6 +1,8 @@
 package com.example.factory.abstractFactory.produce;
 
 import com.example.factory.abstractFactory.bean.EngineA;
+import com.example.factory.abstractFactory.bean.Seat;
+import com.example.factory.abstractFactory.bean.SeatB;
 import com.example.factory.factoryMethod.consume.Factory;
 
 /**
@@ -12,5 +14,10 @@ public class Factory230 implements AbstractFactory {
     @Override
     public EngineA createEngine() {
         return new EngineA();
+    }
+
+    @Override
+    public Seat createSeat() {
+        return new SeatB();
     }
 }

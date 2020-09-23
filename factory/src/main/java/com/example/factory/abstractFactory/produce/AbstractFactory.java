@@ -1,6 +1,7 @@
 package com.example.factory.abstractFactory.produce;
 
 import com.example.factory.abstractFactory.bean.Engine;
+import com.example.factory.abstractFactory.bean.Seat;
 
 /**
  * @Author: yyq
@@ -10,4 +11,5 @@ import com.example.factory.abstractFactory.bean.Engine;
 public interface AbstractFactory {
     Engine createEngine();
 
+    Seat createSeat();
 }
