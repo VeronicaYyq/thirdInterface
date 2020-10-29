@@ -13,6 +13,4 @@ public class MySimpleJob implements SimpleJob {
     public void execute(ShardingContext shardingContext) {
         System.out.println("正在执行定时任务");
     }
-
-
 }
