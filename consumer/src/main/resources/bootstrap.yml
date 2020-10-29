@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 5cf45f40-b0e4-48f3-b633-7705eec1d93e
+        group: test
+
+  application:
+    name: consumer
+server:
+  port: 8111
+

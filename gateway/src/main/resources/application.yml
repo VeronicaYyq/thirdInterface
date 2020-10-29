@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+        - id: path_route
+          uri: http://127.0.0.1:8111
+          predicates:
+            - Path=/api/consumer/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+
+server:
+  port: 8113
+
+
+debug: true
