@@ -1,0 +1,24 @@
+# 应用名称
+elasticjob:
+  registry:
+    address: zk1.test.tuboshi.co:2181,zk2.test.tuboshi.co:2181,zk3.test.tuboshi.co:2181
+    namespace: elastic-job
+
+spring:
+  #  datasource:
+  #    username: root
+  #    url: jdbc:mysql://localhost:3306/my_table
+  #    driver-class-name: com.mysql.jdbc.Driver
+  #    password: 12345678
+  application:
+    name: elastic-job
+
+mySimpleJob:
+  cron: 0 0/5 * * * ?
+  shardingTotalCount: 2
+  shardingItemParameters: 0=hou,1=zheng
+server:
+  port: 8002
+
+
+
