@@ -11,9 +11,8 @@ import java.time.LocalDate;
 public class MySimpleJob implements SimpleJob {
     @Override
     public void execute(ShardingContext shardingContext) {
-        System.out.println(shardingContext.getJobName()+"执行:"+
-                "分片参数:"+shardingContext.getShardingParameter()+
-                ",当前分片项:"+shardingContext.getShardingItem()+
-                ",time:"+ LocalDate.now());
+        System.out.println("正在执行定时任务");
     }
+
+
 }

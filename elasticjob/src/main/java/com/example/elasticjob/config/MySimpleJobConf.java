@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 配置MySimpleJob
+ * 配置MySimpleJob，每秒执行一次
  */
 @Configuration
 public class MySimpleJobConf {
@@ -30,15 +30,11 @@ public class MySimpleJobConf {
      * 任务详情
      */
     @Bean(initMethod = "init")
-    public JobScheduler simpleJobScheduler(@Value("${mySimpleJob.cron}") final String cron,  //yml注入
-                                           @Value("${mySimpleJob.shardingTotalCount}") final int shardingTotalCount,
-                                           @Value("${mySimpleJob.shardingItemParameters}") final String shardingItemParameters) {
+    public JobScheduler simpleJobScheduler() {
         return new SpringJobScheduler(mySimpleJob, regCenter,
                 getLiteJobConfiguration(
                         mySimpleJob.getClass(),
-                        cron,
-                        shardingTotalCount,
-                        shardingItemParameters)
+                        "0/1 * * * * ? ", 1, "0=a,1=b")
                 //,new MyElasticJobListener() 可配置监听器
         );
 
