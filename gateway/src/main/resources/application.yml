@@ -17,4 +17,4 @@ server:
   port: 8113
 
 
-debug: true
+debug: false
