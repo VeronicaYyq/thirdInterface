@@ -37,8 +37,6 @@ public class MySimpleJobConf {
                         "0/1 * * * * ? ", 1, "0=a,1=b")
                 //,new MyElasticJobListener() 可配置监听器
         );
-
-
     }
 
     private LiteJobConfiguration getLiteJobConfiguration(final Class<? extends SimpleJob> jobClass, final String cron,
