@@ -30,7 +30,10 @@ public class RabbitController {
     public void sendMsgToQueue() {
 
         List<UserEntity> users = userService.selectUsersInfo();
-        rabbitTemplate.convertAndSend(RabbitMqConfig.SIMPLE_EXCHANGE, RabbitMqConfig.SIMPLE_ROOTING_KEY, users);
-        System.out.println("消息发送成功");
+        Map<String, Object> map = new HashMap<>();
+        map.put("用户", users);
+        map.put("name", "yyq");
+        rabbitTemplate.convertAndSend(RabbitMqConfig.DEAD_EXCHANGE_1, RabbitMqConfig.SIMPLE_ROOTING_KEY_1, map);
+        System.out.println("开始发送死信");
     }
 }

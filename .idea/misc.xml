@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/weixin-java-pay-demo" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -10,7 +13,36 @@
         <option value="$PROJECT_DIR$/proxy/pom.xml" />
         <option value="$PROJECT_DIR$/syncdemo/pom.xml" />
         <option value="$PROJECT_DIR$/factory/pom.xml" />
+        <option value="$PROJECT_DIR$/thread/pom.xml" />
+        <option value="$PROJECT_DIR$/quartz/pom.xml" />
+        <option value="$PROJECT_DIR$/remove/pom.xml" />
+        <option value="$PROJECT_DIR$/redis/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/elasticjob/pom.xml" />
+        <option value="$PROJECT_DIR$/bounter-job/pom.xml" />
+        <option value="$PROJECT_DIR$/rongyun/pom.xml" />
+        <option value="$PROJECT_DIR$/weixin-java-pay-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/producer/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/jOOQ-spring-boot-example/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/pom.xml" />
+        <option value="$PROJECT_DIR$/es-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-elastic/pom.xml" />
+        <option value="$PROJECT_DIR$/elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/yy-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/daily-test/pom.xml" />
+        <option value="$PROJECT_DIR$/elastic-search/pom.xml" />
+        <option value="$PROJECT_DIR$/wxpay/pom.xml" />
+        <option value="$PROJECT_DIR$/alipay-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/chouxiang/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/es-demo/pom.xml" />
+      </set>
+    </option>
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8.0_211" project-jdk-type="JavaSDK" />
 </project>

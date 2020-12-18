@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: yyq
@@ -23,10 +24,10 @@ import java.util.List;
 public class Consumer {
     private static final Logger LOGGER = LoggerFactory.getLogger(Consumer.class);
 
-    @RabbitListener(queues = RabbitMqConfig.SIMPLE_QUEUE)
-    public void handleMessage(@Payload List ls, @Headers Channel channel, Message message) throws IOException {
+    @RabbitListener(queues = RabbitMqConfig.SIMPLE_QUEUE_1)
+    public void handleMessage(@Payload Map<String,Object> map, @Headers Channel channel, Message message) throws IOException {
         try {
-            System.out.println(ls);
+            System.out.println(map);
             long tag = message.getMessageProperties().getDeliveryTag();
             //确定消费
             channel.basicAck(tag, false);

@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/chouxiang/chouxiang.iml" filepath="$PROJECT_DIR$/chouxiang/chouxiang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daily-test/daily-test.iml" filepath="$PROJECT_DIR$/daily-test/daily-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elastic-search/elastic-search.iml" filepath="$PROJECT_DIR$/elastic-search/elastic-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticjob/elasticjob.iml" filepath="$PROJECT_DIR$/elasticjob/elasticjob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch/elasticsearch.iml" filepath="$PROJECT_DIR$/elasticsearch/elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/factory/factory.iml" filepath="$PROJECT_DIR$/factory/factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jOOQ-spring-boot-example/jooq-spring-boot-example.iml" filepath="$PROJECT_DIR$/jOOQ-spring-boot-example/jooq-spring-boot-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/oneclick-login/oneclick-login.iml" filepath="$PROJECT_DIR$/oneclick-login/oneclick-login.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy/proxy.iml" filepath="$PROJECT_DIR$/proxy/proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remove/remove.iml" filepath="$PROJECT_DIR$/remove/remove.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rongyun/rongyun.iml" filepath="$PROJECT_DIR$/rongyun/rongyun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud/springcloud.iml" filepath="$PROJECT_DIR$/springcloud/springcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/syncdemo/syncdemo.iml" filepath="$PROJECT_DIR$/syncdemo/syncdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/thirdInterface.iml" filepath="$PROJECT_DIR$/.idea/thirdInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weixin-java-pay-demo/weixin-java-pay-demo.iml" filepath="$PROJECT_DIR$/weixin-java-pay-demo/weixin-java-pay-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wxpay/wxpay.iml" filepath="$PROJECT_DIR$/wxpay/wxpay.iml" />
     </modules>
   </component>
 </project>

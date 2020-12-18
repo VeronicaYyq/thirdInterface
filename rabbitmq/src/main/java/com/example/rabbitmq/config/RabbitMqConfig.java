@@ -18,7 +18,7 @@ import java.util.Map;
 @Configuration
 public class RabbitMqConfig {
 
-    public static final String SIMPLE_EXCHANGE = "SIMPLE_EXCHANGE";
+    //public static final String SIMPLE_EXCHANGE = "SIMPLE_EXCHANGE";
 
     public static final String SIMPLE_QUEUE = "SIMPLE_QUEUE";
 
@@ -30,28 +30,28 @@ public class RabbitMqConfig {
 
     public static final String DEAD_ROOTING_KEY = "DEAD_ROOTING_KEY";
 
-    //普通交换机
+   /* //普通交换机
     @Bean
     public TopicExchange simpleTopicExchange() {
         return new TopicExchange(SIMPLE_EXCHANGE, true, false);
     }
-
+*/
     //普通队列
     @Bean
-    public Queue simpleQueue(){
-        return new Queue(SIMPLE_QUEUE,true);
+    public Queue simpleQueue() {
+        return new Queue(SIMPLE_QUEUE, true);
 
     }
 
     //声明死信交换机
     @Bean
-    public TopicExchange deadExchange(){
-        return new TopicExchange(DEAD_EXCHANGE,true,false);
+    public TopicExchange deadExchange() {
+        return new TopicExchange(DEAD_EXCHANGE, true, false);
     }
 
     //声明死信队列
     @Bean
-    public Queue deadQueue(){
+    public Queue deadQueue() {
         Map<String, Object> map = new HashMap<>();
         /**
          * 死信队列由死信交换机创建
@@ -66,13 +66,13 @@ public class RabbitMqConfig {
 
     //绑定普通交换机和死信队列
     @Bean
-    public Binding bindingDead(){
-        return new Binding(SIMPLE_QUEUE, Binding.DestinationType.QUEUE,DEAD_EXCHANGE,DEAD_ROOTING_KEY,null);
+    public Binding bindingDead() {
+        return new Binding(SIMPLE_QUEUE, Binding.DestinationType.QUEUE, DEAD_EXCHANGE, DEAD_ROOTING_KEY, null);
     }
 
-    @Bean
-    public Binding bindingSimple(){
-        return new Binding(DEAD_QUEUE, Binding.DestinationType.QUEUE,SIMPLE_EXCHANGE,SIMPLE_ROOTING_KEY,null);
+    @Bean//死信队列和普通交换机通过普通routing_key绑定
+    public Binding bindingSimple() {
+        return new Binding(DEAD_QUEUE, Binding.DestinationType.QUEUE, DEAD_EXCHANGE, SIMPLE_ROOTING_KEY, null);
     }
 
 }

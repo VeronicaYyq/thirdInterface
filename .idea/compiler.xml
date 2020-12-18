@@ -2,30 +2,84 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="factory" />
-        <module name="dubbo" />
+        <module name="weixin-java-pay-demo" />
         <module name="syncdemo" />
+        <module name="redis" />
+        <module name="job" />
+        <module name="daily-test" />
+        <module name="jooq-spring-boot-example" />
         <module name="oneclick-login" />
+        <module name="thread" />
+        <module name="springcloud" />
+        <module name="rabbitmq" />
+        <module name="chouxiang" />
+        <module name="remove" />
+        <module name="rongyun" />
+        <module name="elastic-search" />
+        <module name="factory" />
+        <module name="wxpay" />
+        <module name="elasticsearch" />
+        <module name="dubbo" />
         <module name="proxy" />
+        <module name="elasticjob" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="alipay" target="1.8" />
+      <module name="Alipay-Demo" target="1.5" />
+      <module name="bounter-job" target="1.8" />
+      <module name="chouxiang" target="1.8" />
+      <module name="consumer" target="1.8" />
+      <module name="daily-test" target="1.5" />
       <module name="dubbo" target="1.8" />
+      <module name="elastic" target="1.8" />
+      <module name="elastic-demo" target="1.8" />
+      <module name="elastic-job" target="1.8" />
+      <module name="elastic-search" target="1.8" />
+      <module name="elasticjob" target="1.8" />
+      <module name="elasticsearch" target="1.8" />
+      <module name="elaticsearch" target="1.8" />
+      <module name="es-analysis" target="1.8" />
+      <module name="es-crud" target="1.8" />
+      <module name="es-demo" target="1.8" />
       <module name="factory" target="1.8" />
+      <module name="framark" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="job" target="1.8" />
+      <module name="jooq-spring-boot-example" target="1.8" />
       <module name="oneclick-login" target="1.8" />
+      <module name="producer" target="1.8" />
       <module name="proxy" target="1.8" />
+      <module name="rabbitmq" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="remove" target="1.8" />
+      <module name="rongyun" target="1.8" />
+      <module name="springcloud" target="1.5" />
       <module name="syncdemo" target="1.8" />
+      <module name="thread" target="1.8" />
+      <module name="weixin-java-pay-demo" target="1.8" />
+      <module name="wxpay" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bounter-job" options="-parameters" />
+      <module name="consumer" options="-parameters" />
       <module name="dubbo" options="-parameters" />
+      <module name="es-analysis" options="-parameters" />
+      <module name="es-crud" options="-parameters" />
+      <module name="framark" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="jooq-spring-boot-example" options="-Xlint:varargs" />
       <module name="oneclick-login" options="-parameters" />
+      <module name="producer" options="-parameters" />
       <module name="proxy" options="-parameters" />
+      <module name="weixin-java-pay-demo" options="-parameters" />
     </option>
   </component>
 </project>

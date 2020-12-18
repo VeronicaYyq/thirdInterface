@@ -122,7 +122,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.0.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.rabbitmq.RabbitmqApplication</mainClass>
+                    <mainClass>com.example.RabbitmqApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

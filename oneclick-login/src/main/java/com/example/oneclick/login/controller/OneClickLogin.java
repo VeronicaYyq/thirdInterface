@@ -1,9 +1,6 @@
 package com.example.oneclick.login.controller;
 
 
-
-
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.example.oneclick.login.vo.LoginVO;
@@ -31,7 +28,6 @@ import java.util.ArrayList;
 public class OneClickLogin {
 
 
-
     @RequestMapping("/login")
     @ResponseBody
     public String getProductName(LoginVO request) throws Exception {
@@ -44,7 +40,7 @@ public class OneClickLogin {
         //请求体格式
         httpPost.setHeader("Accept", "application/json");
         httpPost.setHeader("Content-Type", "application/json");
-        httpPost.setHeader("token","lpck");
+        httpPost.setHeader("token", "lpck");
         String charSet = "UTF-8";
         //请求参数JSON序列化
         String jsonInfo = JSON.toJSONString(request);
@@ -61,9 +57,8 @@ public class OneClickLogin {
                 HttpEntity responseEntity = response.getEntity();
                 String jsonString = EntityUtils.toString(responseEntity);
                 System.out.println(jsonString);
-               return "请求成功";
-            }
-            else{
+                return "请求成功";
+            } else {
                 return "500,请求失败!";
             }
         }
@@ -82,17 +77,5 @@ public class OneClickLogin {
                 e.printStackTrace();
             }
         }
-              /*  JSONObject jo = JSONObject.parseObject(respContent);
-                System.out.println("=============="+jo);
-                JSONObject jsonobj = JSONObject.fromObject(jo);
-                net.sf.json.JSONArray jsonArray1 = jsonobj.getJSONArray("需要获取的json中的属性");
-                for(int i=0;i<jsonArray1.size();i++)
-                {
-                    String productName = (String)jsonArray1.getJSONObject(i).get("json数组中某一个属性");
-                    System.out.println(productName);
-                    productList.add(productName);
-                }*/
-
-
     }
 }
